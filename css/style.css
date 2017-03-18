@@ -260,10 +260,10 @@ h1, h2, h3, h4, h5, h6{
 	position: absolute;
 	top: 0;
 	right: -85%;
-	background: -webkit-linear-gradient(bottom, #F7A68E , #FBBA88);
-	background: -o-linear-gradient(bottom, #F7A68E , #FBBA88); 
-	background: -moz-linear-gradient(bottom, #F7A68E , #FBBA88);
-	background: linear-gradient(to bottom, #F7A68E, #FBBA88);
+	background: -webkit-linear-gradient(bottom, #F7A68E , #F2CC7B);
+	background: -o-linear-gradient(bottom, #F7A68E , #F2CC7B); 
+	background: -moz-linear-gradient(bottom, #F7A68E , #F2CC7B);
+	background: linear-gradient(to bottom, #F7A68E, #F2CC7B);
 	transform: skew(-15deg);
 }
 .wapper .bg-below{
