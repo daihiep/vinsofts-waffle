@@ -8,6 +8,7 @@ $(document).ready(function(){
 		var new_height = $(window).height();
 		$('.resize').width(new_width);
 		$('.resize').height(new_height);
+		$('.owl-carousel').css('z-index',1);
 	});
 	
 	

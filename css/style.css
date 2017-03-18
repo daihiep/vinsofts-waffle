@@ -18,7 +18,23 @@ h1, h2, h3, h4, h5, h6{
 	
 }
 .wapper::after {
-	  content: "";
+	  
+	}
+
+.wapper .bg-image{
+	/*position: relative;*/
+	overflow: hidden;
+	background: url("../images/Pattern.png"), linear-gradient(to right, #F2CC7B , #F7AA8C);
+	  opacity: 1;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  z-index: 6;
+	  position: relative;
+}
+.wapper .bg-image::affter{
+	/*content: "";
 	  background: url("../images/Pattern.png"), linear-gradient(to right, #F2CC7B , #F7AA8C);
 	  opacity: 0.8;
 	  top: 0;
@@ -26,12 +42,7 @@ h1, h2, h3, h4, h5, h6{
 	  bottom: 0;
 	  right: 0;
 	  position: absolute;
-	  z-index: -1;
-	}
-
-.wapper .bg-image{
-	
-	overflow: hidden;
+	  z-index: -1;*/
 }
 .wapper .content{
 		/*padding-top: 150px;*/
@@ -179,7 +190,7 @@ h1, h2, h3, h4, h5, h6{
 	bottom: -10%;
 	right: -10%;
 	z-index: -2;
-	opacity: 0.7;
+	opacity: 0.9;
 }
 .wapper .content .home-right-content::after{
 	content: "";
@@ -225,18 +236,45 @@ h1, h2, h3, h4, h5, h6{
 	background: -o-linear-gradient(right, #FCDBB4 , #F3CEB6); 
 	background: -moz-linear-gradient(right, #FCDBB4 , #F3CEB6); 
 	background: linear-gradient(to right, #FCDBB4 , #F3CEB6);
+	overflow: hidden;
 	/*position: relative;*/
-	/*z-index: 1;*/
+	/*z-index: -1111;*/
+}
+.wapper .below::before{
+	content: "";
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background: -webkit-linear-gradient(left, #F8CF7A , #FAC481);
+	background: -o-linear-gradient(right, #F8CF7A , #FAC481); 
+	background: -moz-linear-gradient(right, #F8CF7A , #FAC481);
+	background: linear-gradient(to right, #F8CF7A, #FAC481);
+}
+.wapper .below::after{
+	
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: -85%;
+	background: -webkit-linear-gradient(bottom, #F7A68E , #FBBA88);
+	background: -o-linear-gradient(bottom, #F7A68E , #FBBA88); 
+	background: -moz-linear-gradient(bottom, #F7A68E , #FBBA88);
+	background: linear-gradient(to bottom, #F7A68E, #FBBA88);
+	transform: skew(-15deg);
 }
 .wapper .bg-below{
-	width: 100%;
+	/*width: 100%;
 	height: 100%;
 	background: -webkit-linear-gradient(left, #FCDBB4 , #F3CEB6);
 	background: -o-linear-gradient(right, #FCDBB4 , #F3CEB6); 
 	background: -moz-linear-gradient(right, #FCDBB4 , #F3CEB6); 
-	background: linear-gradient(to right, #FCDBB4 , #F3CEB6);
-	position: relative;
-	z-index: 1;
+	background: linear-gradient(to right, #FCDBB4 , #F3CEB6);*/
+	/*position: relative;*/
+	/*z-index: 1;*/
 }
 .wapper .bg-below::before{
 	content: "";
@@ -267,16 +305,17 @@ h1, h2, h3, h4, h5, h6{
 /* video */
 
 .wapper .bg-video{
-	width: 100%;
+	/*width: 100%;
 	height: 100%;
 	background: -webkit-linear-gradient(left, #FCDBB4 , #F3CEB6);
 	background: -o-linear-gradient(right, #FCDBB4 , #F3CEB6); 
 	background: -moz-linear-gradient(right, #FCDBB4 , #F3CEB6); 
-	background: linear-gradient(to right, #FCDBB4 , #F3CEB6);
-	position: relative;
+	background: linear-gradient(to right, #FCDBB4 , #F3CEB6);*/
+	/*position: relative;
+	z-index: 1;*/
 }
 .wapper .bg-video::before{
-	content: "";
+	/*content: "";
 	width: 20%;
 	height: 100%;
 	position: absolute;
@@ -285,11 +324,11 @@ h1, h2, h3, h4, h5, h6{
 	background: -webkit-linear-gradient(left, #F8CF7A , #FAC481);
 	background: -o-linear-gradient(right, #F8CF7A , #FAC481); 
 	background: -moz-linear-gradient(right, #F8CF7A , #FAC481);
-	background: linear-gradient(to right, #F8CF7A, #FAC481);
+	background: linear-gradient(to right, #F8CF7A, #FAC481);*/
 }
 .wapper .bg-video::after{
 	
-	content: "";
+	/*content: "";
 	width: 40%;
 	height: 100%;
 	position: absolute;
@@ -299,7 +338,7 @@ h1, h2, h3, h4, h5, h6{
 	background: -o-linear-gradient(bottom, #F7A68E , #FBBA88); 
 	background: -moz-linear-gradient(bottom, #F7A68E , #FBBA88);
 	background: linear-gradient(to bottom, #F7A68E, #FBBA88);
-	transform: skew(-15deg);
+	transform: skew(-15deg);*/
 }
 .wapper .video{
 	padding-bottom: 130px;
@@ -384,7 +423,7 @@ h1, h2, h3, h4, h5, h6{
 
 }
 .wapper .bg-work::after{
-	content: "";
+	/*content: "";
 	width: 69%;
 	height: 100%;
 	position: absolute;
@@ -395,7 +434,7 @@ h1, h2, h3, h4, h5, h6{
 	background: -moz-linear-gradient(bottom left, #FDAB91 , #FAC67F);
 	background: linear-gradient(to bottom left, #FDAB91, #FAC67F);
 	transform: skew(-15deg);
-	z-index: -1;
+	z-index: -1;*/
 }
 .wapper .content .work h2{
 	font-family: Helvetica;
@@ -447,7 +486,7 @@ h1, h2, h3, h4, h5, h6{
 	z-index: 2;
 }
 .wapper .bg-team::before{
-	content: "";
+	/*content: "";
 	width: 20%;
 	height: 100%;
 	position: absolute;
@@ -457,10 +496,10 @@ h1, h2, h3, h4, h5, h6{
 	background: -o-linear-gradient(bottom right, #F8CF7A , #F9BC7D); 
 	background: -moz-linear-gradient(bottom right, #F8CF7A , #F9BC7D);
 	background: linear-gradient(to bottom right, #F8CF7A, #F9BC7D);
-	z-index: -99;
+	z-index: -99;*/
 }
 .wapper .bg-team::after{
-	content: "";
+	/*content: "";
 	width: 54%;
 	height: 100%;
 	position: absolute;
@@ -470,7 +509,7 @@ h1, h2, h3, h4, h5, h6{
 	background: -o-linear-gradient(bottom, #FDAB91 , #FBBD85); 
 	background: -moz-linear-gradient(bottom, #FDAB91 , #FBBD85);
 	background: linear-gradient(to bottom, #FDAB91, #FBBD85);
-	transform: skew(-15deg);
+	transform: skew(-15deg);*/
 }
 .wapper .bg-image-2{
 	/*background-color: #ccc;
