@@ -410,7 +410,7 @@ h1, h2, h3, h4, h5, h6{
 .wapper .bg-work::before{
 	content: "";
 	width: 40%;
-	height: 70%;
+	height: 60%;
 	border-radius: 50%;
 	position: absolute;
 	z-index: -2;
